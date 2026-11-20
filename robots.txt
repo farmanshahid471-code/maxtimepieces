@@ -1,4 +1,48 @@
+# Max Timepieces - Production Crawl Architecture & Agent Readiness
+# Domain: https://maxtimepieces.com
+
 User-agent: *
 Allow: /
+Disallow: /wp-admin/
+Disallow: /wp-includes/
+Disallow: /wp-json/
+Disallow: /*?*
+Disallow: /*&preview=true
+
+# Search Engine Web Crawlers
+User-agent: Googlebot
+Allow: /
+Disallow: /wp-admin/
+Disallow: /wp-includes/
+Disallow: /*?*
+
+User-agent: Bingbot
+Allow: /
+Disallow: /wp-admin/
+Disallow: /wp-includes/
+Disallow: /*?*
+
+# Answer Engine & AI Search Crawlers (AEO / GEO)
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Claude-SearchBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+# Agent & LLM Documentation
+# See: https://maxtimepieces.com/llms.txt
+# See: https://maxtimepieces.com/llms-full.txt
 
 Sitemap: https://maxtimepieces.com/sitemap.xml

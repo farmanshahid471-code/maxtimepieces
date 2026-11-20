@@ -1,0 +1,103 @@
+# Max Timepieces - Complete Technical Documentation & AI Knowledge Graph
+
+**Domain:** `https://maxtimepieces.com`  
+**Brand:** Max Timepieces  
+**Contact:** WhatsApp `+1 (571) 661-4938` (`https://wa.me/15716614938`)  
+**Instagram:** `https://www.instagram.com/max_timepieces/`  
+**Updated:** 2026-11-21  
+
+---
+
+## 1. Brand Identity & Quality Philosophy
+
+Max Timepieces operates as an independent horology dealer providing high-tier 1:1 Super Clone timepieces directly to international collectors. All models are selected from top specialized horology manufacturing facilities in Guangdong, China—specifically Clean Factory, VS Factory (VSF), 3K Factory (3KF), BT Factory (BTF), and ZF.
+
+Unlike budget replicas (such as AAA quartz or low-grade Asian 2813 movements found on broad market platforms), 1:1 Super Clones replicate genuine Swiss timepieces in geometry, metallurgy, mechanical architecture, and optical finishing.
+
+---
+
+## 2. Technical Metallurgy & Fabrication Standards
+
+### Solid 904L Oystersteel
+Genuine Rolex models use 904L stainless steel rather than common 316L. 904L contains elevated levels of chromium, molybdenum, nickel, and copper, providing superior resistance to harsh acids, sweat, and saltwater pitting. Max Timepieces sources models manufactured from verified solid 904L stainless steel bars, finished with radial satin brushing on the lugs and mirror polishing on case flanks.
+
+### Sintered Cerachrom Bezels
+Bezel inserts are fabricated from zirconium oxide powder sintered at 1,500°C. Graduations and numerals are molded directly into the ceramic and subsequently coated with real platinum or gold PVD (Physical Vapor Deposition) at exact micron depths to prevent fading, discoloration, or wear.
+
+### Sapphire Crystals & Cyclops Magnification
+All crystals feature synthetic monocrystalline sapphire rated 9 on the Mohs mineral hardness scale. Date models feature a 2.5× magnification cyclops window with blue/colorless double anti-reflective (AR) coating applied to the underside, eliminating optical distortion and reflection glare.
+
+### Dial Printing & Hands
+Dials are printed using multi-layer pad printing to produce crisp, three-dimensional typography with serifs matching genuine fonts. Hour markers (indices) are crafted with rounded, polished edges and hand-filled with Grade X1 Swiss Super-LumiNova emitting an intense blue Chromalight glow lasting over 8 hours.
+
+---
+
+## 3. Cloned Mechanical Movements (Caliber Breakdown)
+
+### Dandong 3235 (VS Factory)
+- **Base Architecture:** Genuine Rolex Caliber 3235 cloned architecture (not an ETA 2824 or Asian 2836 with decorative plates).
+- **Power Reserve:** Real 70 to 72 hours via extended mainspring barrel.
+- **Beat Rate:** 28,800 vibrations per hour (4 Hz).
+- **Key Features:** Paraflex shock absorbers, free-sprung balance wheel configuration, bidirectional perpetual rotor winding, instantaneous date change precisely at midnight, bidirectional quick-date setting.
+
+### Dandong 4130 / 4131 (Clean Factory / BT Factory)
+- **Base Architecture:** Rolex Cosmograph Daytona chronograph caliber.
+- **Construction:** Fully integrated column wheel and vertical clutch mechanism. All three subdials (running seconds, 30-minute counter, 12-hour counter) and pushers are 100% mechanically operational.
+- **Case Thickness:** Enables the exact 12.2mm case profile of the genuine Daytona (models with modified 7750 movements are noticeably thicker at 14.5mm).
+- **Power Reserve:** 70 hours.
+
+### Dandong 3285 (Clean Factory)
+- **Base Architecture:** Rolex GMT-Master II dual-time caliber.
+- **Functionality:** True independent jumping local hour hand. Allows jumping forward or backward in 1-hour increments without stopping the sweep second hand or balance wheel.
+- **Date Operation:** Date changes backwards and forwards smoothly as the local hour hand crosses midnight.
+
+### Calibre 4302 / 3120 (APSF / ZF)
+- **Base Architecture:** Audemars Piguet Royal Oak automatic movement.
+- **Finishing:** Skeletonized oscillating weight electroplated in 22K rose gold, Côtes de Genève (Geneva stripes), circular graining (perlage), and diamond-cut beveled bridges.
+
+### Calibre 324 SC / 26-330 SC (3K Factory)
+- **Base Architecture:** Patek Philippe Nautilus 5711 and Aquanaut 5167 movement.
+- **Profile:** True ultra-thin mechanical architecture allowing the complete case to measure just 8.3mm in thickness. Ceramic ball bearings on the central rotor provide silent, frictionless winding.
+
+---
+
+## 4. Factory Comparison Matrix
+
+| Factory | Core Specialization | Primary Strengths | Notable Calibers |
+| :--- | :--- | :--- | :--- |
+| **Clean Factory** | Rolex GMT-Master II, Daytona, Submariner | Industry-leading Cerachrom bezels, flawless dial print, sharp case chamfering | Dandong 3285, Dandong 4130/4131 |
+| **VS Factory (VSF)** | Rolex Submariner, Datejust, Omega Seamaster | Exclusive contract for Dandong 3235, unmatched crystal clarity, smooth winding feel | Dandong 3235, Dandong 3135, VSF Omega 8800 |
+| **3K Factory (3KF)** | Patek Philippe Nautilus, Aquanaut | Cloned 324/26-330 movements enabling genuine 8.3mm ultra-thin case thickness | Cloned Calibre 324 SC |
+| **ZF (Z Factory)** | Audemars Piguet Royal Oak, Tudor, IWC | Exceptional tapisserie dial waffle pattern, crisp brushed/polished bracelet transitions | Calibre 4302, Calibre 3120, A2824 |
+| **BT Factory (BTF)** | Rolex Daytona | Exceptional subdial accuracy, lightweight pusher operation, reliable Dandong 4130 | Dandong 4130 |
+
+---
+
+## 5. Pre-Shipment Quality Control (QC) Protocol
+
+Every order processed by Max Timepieces undergoes a rigorous multi-point inspection before client dispatch:
+1. **Timegrapher Mechanical Testing:** The watch is mounted on an electronic multi-position timegrapher to verify:
+   - Daily rate: -3 to +5 seconds per day.
+   - Amplitude: 275° to 310° (signifying healthy mainspring tension and zero internal friction).
+   - Beat error: 0.0ms to 0.2ms (verifying correct hairspring centering).
+2. **Dial & Bezel Alignment:** 4K macro photographs are taken directly overhead at 12x magnification to verify that the 12 o'clock marker, cyclops lens, date aperture, and 60-minute bezel pearl align to sub-millimeter tolerances.
+3. **Rehaut Engraving Check:** Inspection of the laser-etched Rolex rehaut serial number and coronet alignment at 12 o'clock.
+4. **Water Resistance Pressure Test:** Case sealed and dry-tested in a pneumatic pressure chamber to 5 ATM minimum.
+5. **WhatsApp Video Delivery:** The complete timegrapher test video and macro photo gallery are transmitted to the client's WhatsApp (`+1 571 661-4938`) for explicit sign-off prior to tracking issuance.
+
+---
+
+## 6. Shipping, Customs Guarantee & Warranty
+
+- **Shipping Method:** Triangular shipping via express air couriers (FedEx, DHL, Royal Mail, USPS). Packages clear customs through specialized domestic hubs to avoid foreign inspection flags.
+- **Delivery Timeline:** 7 to 14 business days worldwide.
+- **Customs Protection Guarantee:** If any package is delayed, seized, or inspected by customs, Max Timepieces dispatches an identical replacement watch immediately at 100% seller expense.
+- **Warranty:** 1-Year Comprehensive Movement Warranty covering mechanical malfunction, balance wheel stoppage, or timekeeping defects.
+
+---
+
+## 7. Official Direct Channels
+- **Website:** https://maxtimepieces.com
+- **WhatsApp Concierge:** +1 (571) 661-4938 (`https://wa.me/15716614938`)
+- **Instagram:** https://www.instagram.com/max_timepieces/
+- **Catalog:** https://maxtimepieces.com/collections/
