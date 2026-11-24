@@ -2972,7 +2972,7 @@ document.addEventListener('DOMContentLoaded', function () {
             </p>
             <div class="flex items-center gap-6">
                 <a class="font-sans text-xs text-[#909090] hover:text-[#0F0E0C] transition-colors" href="/privacy/">Privacy Policy</a>
-                <a class="font-sans text-xs text-[#909090] hover:text-[#0F0E0C] transition-colors" href="/terms/">Terms</a>
+                <a class="font-sans text-xs text-[#909090] hover:text-[#0F0E0C] transition-colors" href="/terms/">Terms &amp; Conditions</a>
                 <a class="font-sans text-xs text-[#909090] hover:text-[#0F0E0C] transition-colors" href="/shipping/">Shipping Policy</a>
                 <a class="font-sans text-xs text-[#909090] hover:text-[#0F0E0C] transition-colors" href="/ip-notice/">IP Notice</a>
             </div>
@@ -2980,7 +2980,36 @@ document.addEventListener('DOMContentLoaded', function () {
     </div>
 </footer>
 
+<!-- Floating WhatsApp Action Widget (1-to-1 Match with reference site) -->
+<div class="fixed right-5 bottom-6 z-40 p-1.5 rounded-full bg-[#25D366]/20 transition-all duration-300">
+    <a href="https://wa.me/15716614938?text=Hi%20Max%20Watches%2C%20I%27m%20interested%20in%20a%20super%20clone%20watch." target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-4 py-2.5 bg-[#25D366] hover:bg-[#20ba59] text-white rounded-full shadow-lg transition-all duration-300 hover:scale-105 active:scale-95 border border-white/30">
+        <svg fill="currentColor" height="17" viewBox="0 0 256 256" width="17" xmlns="http://www.w3.org/2000/svg">
+            <path d="M152.58,145.23l23,11.48A24,24,0,0,1,152,176a72.08,72.08,0,0,1-72-72A24,24,0,0,1,99.29,80.46l11.48,23L101,118a8,8,0,0,0-.73,7.51,56.47,56.47,0,0,0,30.15,30.15A8,8,0,0,0,138,155ZM232,128A104,104,0,0,1,79.12,219.82L45.07,231.17a16,16,0,0,1-20.24-20.24l11.35-34.05A104,104,0,1,1,232,128Zm-40,24a8,8,0,0,0-4.42-7.16l-32-16a8,8,0,0,0-8,.5l-14.69,9.8a40.55,40.55,0,0,1-16-16l9.8-14.69a8,8,0,0,0,.5-8l-16-32A8,8,0,0,0,104,64a40,40,0,0,0-40,40,88.1,88.1,0,0,0,88,88A40,40,0,0,0,192,152Z"></path>
+        </svg>
+        <span class="font-sans text-xs font-semibold tracking-wide">Inquire Now</span>
+    </a>
+</div>
 
+<!-- Real-Time QC / Order Social Proof Popup (Matches Reference Screenshot 1:1) -->
+<div id="fomo-notification-wrap" class="fixed bottom-6 left-5 z-40 max-w-[340px] pointer-events-none transition-all duration-500 transform translate-y-8 opacity-0">
+    <div class="bg-white border border-[#E4DFD1] rounded-[10px] p-3 sm:p-3.5 shadow-xl flex items-start gap-3 relative pointer-events-auto">
+        <!-- Left Thumbnail with Live Green Dot -->
+        <div class="relative flex-shrink-0">
+            <img id="fomo-img" src="" alt="Watch QC" class="w-12 h-12 rounded-[8px] object-cover bg-[#EDE8DA] border border-[#E4DFD1]" />
+            <span class="w-3 h-3 rounded-full bg-[#10b981] border-2 border-white absolute -bottom-1 -right-1"></span>
+        </div>
+        <!-- Notification Text -->
+        <div class="flex-1 min-w-0 pr-4">
+            <p class="font-sans text-[12px] text-[#2A2D31] leading-snug">
+                <strong id="fomo-name" class="font-bold text-[#14181A]">Kevin</strong> from <span id="fomo-loc">Miami, FL</span> requested QC photos for <strong id="fomo-model" class="font-bold text-[#14181A]">Omega Seamaster Diver 300M</strong>
+            </p>
+            <div class="flex items-center gap-1.5 text-[10px] text-[#6B7268] mt-1.5">
+                <span class="w-1.5 h-1.5 rounded-full bg-[#10b981]"></span>
+                <span id="fomo-time">2 minutes ago</span>
+                <span>·</span>
+                <span class="text-[#0F5132] font-semibold">Verified via WhatsApp</span>
+            </div>
+        </div>
         <!-- Close Button -->
         <button type="button" id="fomo-close" aria-label="Dismiss notification" class="text-zinc-400 hover:text-zinc-700 text-xs leading-none p-1 absolute top-2 right-2">
             ✕
@@ -3004,130 +3033,5 @@ var MaxWatchesData = {"ajax_url":"/wp-admin/admin-ajax.php","whatsapp_url":"http
 var e="script#wp-emoji-settings",t=document.querySelector(e);if(!(t instanceof HTMLScriptElement))throw new Error("Element missing: "+e);const r=JSON.parse(t.text),s=(window._wpemojiSettings=r,"wpEmojiSettingsSupports"),o=["flag","emoji"];function i(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(s,JSON.stringify(t))}catch(e){}}function c(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);t=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data);e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0);const r=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data);return t.every((e,t)=>e===r[t])}function p(e,t){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var n=e.getImageData(16,16,1,1);for(let e=0;e<n.data.length;e++)if(0!==n.data[e])return!1;return!0}function u(e,t,n,r){switch(t){case"flag":return n(e,"\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f","\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f")?!1:!n(e,"\ud83c\udde8\ud83c\uddf6","\ud83c\udde8\u200b\ud83c\uddf6")&&!n(e,"\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f","\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");case"emoji":return!r(e,"\ud83e\u1fac8")}return!1}function f(e,t,n,r){let a;const s=(a="undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):document.createElement("canvas")).getContext("2d",{willReadFrequently:!0}),o=(s.textBaseline="top",s.font="600 32px Arial",{});return e.forEach(e=>{o[e]=t(s,e,n,r)}),o}function a(e){var t=document.createElement("script");t.src=e,t.defer=!0,document.head.appendChild(t)}r.supports={everything:!0,everythingExceptFlag:!0},new Promise(t=>{let n=function(){try{var e=JSON.parse(sessionStorage.getItem(s));if("object"==typeof e&&"number"==typeof e.timestamp&&(new Date).valueOf()<e.timestamp+604800&&"object"==typeof e.supportTests)return e.supportTests}catch(e){}return null}();if(!n){if("undefined"!=typeof Worker&&"undefined"!=typeof OffscreenCanvas&&"undefined"!=typeof URL&&URL.createObjectURL&&"undefined"!=typeof Blob)try{var e="postMessage("+f.toString()+"("+[JSON.stringify(o),u.toString(),c.toString(),p.toString()].join(",")+"));",r=new Blob([e],{type:"text/javascript"});const a=new Worker(URL.createObjectURL(r),{name:"wpTestEmojiSupports"});return void(a.onmessage=e=>{i(n=e.data),a.terminate(),t(n)})}catch(e){}i(n=f(o,u,c,p))}t(n)}).then(e=>{for(const n in e)r.supports[n]=e[n],r.supports.everything=r.supports.everything&&r.supports[n],"flag"!==n&&(r.supports.everythingExceptFlag=r.supports.everythingExceptFlag&&r.supports[n]);var t;r.supports.everythingExceptFlag=r.supports.everythingExceptFlag&&!r.supports.flag,r.supports.everything||((t=r.source||{}).concatemoji?a(t.concatemoji):t.wpemoji&&t.twemoji&&(a(t.twemoji),a(t.wpemoji)))});
 //# sourceURL=/wp-includes/js/wp-emoji-loader.min.js
 </script>
-
-<!-- Interactive Floating WhatsApp Chat Widget -->
-<div id="max-whatsapp-widget" class="fixed right-5 bottom-6 z-50">
-    <!-- Collapsed Launcher Button with Tooltip -->
-    <div class="relative group">
-        <button type="button" id="max-wa-trigger" aria-label="Open WhatsApp Chat with Max Timepieces" aria-haspopup="dialog" aria-expanded="false" class="flex items-center justify-center w-14 h-14 bg-[#25D366] hover:bg-[#20ba59] text-white rounded-full shadow-2xl transition-all duration-300 hover:scale-105 active:scale-95 focus:outline-none focus:ring-4 focus:ring-[#25D366]/40">
-            <svg fill="currentColor" height="28" viewBox="0 0 256 256" width="28" xmlns="http://www.w3.org/2000/svg">
-                <path d="M152.58,145.23l23,11.48A24,24,0,0,1,152,176a72.08,72.08,0,0,1-72-72A24,24,0,0,1,99.29,80.46l11.48,23L101,118a8,8,0,0,0-.73,7.51,56.47,56.47,0,0,0,30.15,30.15A8,8,0,0,0,138,155ZM232,128A104,104,0,0,1,79.12,219.82L45.07,231.17a16,16,0,0,1-20.24-20.24l11.35-34.05A104,104,0,1,1,232,128Zm-40,24a8,8,0,0,0-4.42-7.16l-32-16a8,8,0,0,0-8,.5l-14.69,9.8a40.55,40.55,0,0,1-16-16l9.8-14.69a8,8,0,0,0,.5-8l-16-32A8,8,0,0,0,104,64a40,40,0,0,0-40,40,88.1,88.1,0,0,0,88,88A40,40,0,0,0,192,152Z"></path>
-            </svg>
-        </button>
-        <!-- Desktop Hover Tooltip -->
-        <div class="hidden sm:block absolute right-16 top-1/2 -translate-y-1/2 px-3 py-1.5 bg-[#0F0E0C] text-white text-[11px] font-sans font-medium rounded shadow-lg whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none">
-            Chat with us
-        </div>
-    </div>
-
-    <!-- WhatsApp Chat Popup Modal -->
-    <div id="max-wa-modal" role="dialog" aria-modal="true" aria-labelledby="max-wa-modal-title" class="hidden absolute right-0 bottom-16 w-[340px] sm:w-[370px] bg-white rounded-2xl shadow-2xl border border-[#D6D6D4] overflow-hidden transition-all duration-300">
-        <!-- Modal Header -->
-        <div class="bg-[#0F5132] text-white p-4 flex items-center justify-between">
-            <div class="flex items-center gap-3">
-                <div class="w-10 h-10 bg-[#25D366] rounded-full flex items-center justify-center flex-shrink-0">
-                    <svg fill="currentColor" height="22" viewBox="0 0 256 256" width="22" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M152.58,145.23l23,11.48A24,24,0,0,1,152,176a72.08,72.08,0,0,1-72-72A24,24,0,0,1,99.29,80.46l11.48,23L101,118a8,8,0,0,0-.73,7.51,56.47,56.47,0,0,0,30.15,30.15A8,8,0,0,0,138,155ZM232,128A104,104,0,0,1,79.12,219.82L45.07,231.17a16,16,0,0,1-20.24-20.24l11.35-34.05A104,104,0,1,1,232,128Zm-40,24a8,8,0,0,0-4.42-7.16l-32-16a8,8,0,0,0-8,.5l-14.69,9.8a40.55,40.55,0,0,1-16-16l9.8-14.69a8,8,0,0,0,.5-8l-16-32A8,8,0,0,0,104,64a40,40,0,0,0-40,40,88.1,88.1,0,0,0,88,88A40,40,0,0,0,192,152Z"></path>
-                    </svg>
-                </div>
-                <div>
-                    <h3 id="max-wa-modal-title" class="font-bebas text-lg tracking-wider leading-none">MAX TIMEPIECES</h3>
-                    <p class="font-sans text-[11px] text-white/80">VIP WhatsApp Concierge</p>
-                </div>
-            </div>
-            <button type="button" id="max-wa-close" aria-label="Close Chat Window" class="w-8 h-8 flex items-center justify-center text-white/80 hover:text-white hover:bg-white/10 rounded-full transition-colors text-lg">
-                ✕
-            </button>
-        </div>
-
-        <!-- Chat Body -->
-        <div class="p-5 bg-[#FBF9F3]">
-            <!-- Greeting Message Bubble -->
-            <div class="bg-white p-3.5 rounded-2xl rounded-tl-none shadow-sm border border-[#E4DFD1] mb-4">
-                <p class="font-sans text-xs text-[#0F0E0C] leading-relaxed">
-                    Hello! Welcome to <strong>Max Timepieces</strong>. How can our horology team assist you today?
-                </p>
-                <div class="text-[10px] text-[#8F8E80] mt-1 text-right">Direct: +1 (571) 661-4938</div>
-            </div>
-
-            <!-- Quick Action Options -->
-            <p class="font-sans text-[11px] font-bold uppercase tracking-wider text-[#525250] mb-2.5">Select a Quick Action:</p>
-            <div class="space-y-2">
-                <a href="https://wa.me/15716614938?text=Hello%20Max%20Timepieces%2C%20I%20would%20like%20to%20speak%20with%20your%20team.%20Please%20assist%20me." target="_blank" rel="noopener noreferrer" class="flex items-center justify-between p-2.5 bg-white hover:bg-[#0F5132] hover:text-white text-[#0F0E0C] text-xs font-sans font-medium rounded-lg border border-[#D6D6D4] transition-colors group">
-                    <span>💬 General Inquiry</span>
-                    <span class="text-xs text-[#8F8E80] group-hover:text-white">&rarr;</span>
-                </a>
-                <a href="https://wa.me/15716614938?text=Hello%20Max%20Timepieces%2C%20I%20need%20assistance%20with%20an%20order." target="_blank" rel="noopener noreferrer" class="flex items-center justify-between p-2.5 bg-white hover:bg-[#0F5132] hover:text-white text-[#0F0E0C] text-xs font-sans font-medium rounded-lg border border-[#D6D6D4] transition-colors group">
-                    <span>📦 Order Support</span>
-                    <span class="text-xs text-[#8F8E80] group-hover:text-white">&rarr;</span>
-                </a>
-                <a href="https://wa.me/15716614938?text=Hello%20Max%20Timepieces%2C%20I%20have%20a%20question%20about%20your%20shipping%20policy%20and%20delivery%20information." target="_blank" rel="noopener noreferrer" class="flex items-center justify-between p-2.5 bg-white hover:bg-[#0F5132] hover:text-white text-[#0F0E0C] text-xs font-sans font-medium rounded-lg border border-[#D6D6D4] transition-colors group">
-                    <span>✈️ Shipping Question</span>
-                    <span class="text-xs text-[#8F8E80] group-hover:text-white">&rarr;</span>
-                </a>
-                <a href="https://wa.me/15716614938?text=Hello%20Max%20Timepieces%2C%20I%20need%20assistance%20navigating%20your%20website." target="_blank" rel="noopener noreferrer" class="flex items-center justify-between p-2.5 bg-white hover:bg-[#0F5132] hover:text-white text-[#0F0E0C] text-xs font-sans font-medium rounded-lg border border-[#D6D6D4] transition-colors group">
-                    <span>🔍 Website Assistance</span>
-                    <span class="text-xs text-[#8F8E80] group-hover:text-white">&rarr;</span>
-                </a>
-            </div>
-        </div>
-
-        <!-- Modal Footer -->
-        <div class="p-3 bg-white border-t border-[#E4DFD1] text-center">
-            <a href="https://wa.me/15716614938?text=Hi%20Max%20Watches%2C%20I%27m%20interested%20in%20a%20super%20clone%20watch." target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-2 w-full py-2 bg-[#25D366] hover:bg-[#20ba59] text-white text-xs font-sans font-bold uppercase tracking-wider rounded-lg transition-colors">
-                Open Full WhatsApp Chat &rarr;
-            </a>
-        </div>
-    </div>
-</div>
-
-<script>
-(function() {
-    var trigger = document.getElementById('max-wa-trigger');
-    var modal = document.getElementById('max-wa-modal');
-    var closeBtn = document.getElementById('max-wa-close');
-
-    if (!trigger || !modal) return;
-
-    function toggleModal() {
-        var isHidden = modal.classList.contains('hidden');
-        if (isHidden) {
-            modal.classList.remove('hidden');
-            trigger.setAttribute('aria-expanded', 'true');
-            if (closeBtn) closeBtn.focus();
-        } else {
-            modal.classList.add('hidden');
-            trigger.setAttribute('aria-expanded', 'false');
-            trigger.focus();
-        }
-    }
-
-    trigger.addEventListener('click', function(e) {
-        e.stopPropagation();
-        toggleModal();
-    });
-
-    if (closeBtn) {
-        closeBtn.addEventListener('click', function(e) {
-            e.stopPropagation();
-            toggleModal();
-        });
-    }
-
-    document.addEventListener('keydown', function(e) {
-        if (e.key === 'Escape' && !modal.classList.contains('hidden')) {
-            toggleModal();
-        }
-    });
-
-    document.addEventListener('click', function(e) {
-        if (!modal.classList.contains('hidden') && !modal.contains(e.target) && e.target !== trigger) {
-            modal.classList.add('hidden');
-            trigger.setAttribute('aria-expanded', 'false');
-        }
-    });
-})();
-</script>
-
 </body>
 </html>
