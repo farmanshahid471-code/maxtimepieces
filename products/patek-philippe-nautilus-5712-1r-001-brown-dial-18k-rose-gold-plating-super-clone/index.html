@@ -18,10 +18,22 @@
     <link rel="stylesheet" href="https://api.fontshare.com/v2/css?f[]=satoshi@300,400,500,600,700,800&display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Playfair+Display:ital,wght@0,600;0,700;1,400&display=swap">
     <link rel="stylesheet" href="/style.css">
-    
+
     <style>
     .font-display {
         font-family: 'Cormorant Garamond', 'Playfair Display', Georgia, serif !important;
+    }
+    @keyframes wa-glow-pulse {
+      0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7); }
+      50% { transform: scale(1.02); box-shadow: 0 0 0 14px rgba(37, 211, 102, 0); }
+      100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
+    }
+    .wa-fab-btn {
+      animation: wa-glow-pulse 2.2s infinite;
+    }
+    .wa-fab-btn:hover {
+      transform: translateY(-2px) scale(1.03) !important;
+      background-color: #20b558 !important;
     }
     </style>
 
@@ -64,7 +76,7 @@
 </head>
 <body class="bg-[#FBF9F3] text-[#14181A] antialiased selection:bg-[#A88030] selection:text-white flex flex-col min-h-screen">
 
-        <!-- Top Announcement Bar -->
+    <!-- Top Announcement Bar -->
     <header class="fixed top-0 left-0 right-0 z-50">
         <div class="bg-[#8A6820]">
             <div class="flex items-center justify-between h-9 px-5 lg:px-10 max-w-[1440px] mx-auto">
@@ -131,16 +143,16 @@
             <section class="py-12 lg:py-16 bg-white">
                 <div class="container-site max-w-[1440px] px-5 lg:px-10 mx-auto">
                     <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 xl:gap-20">
-                        
+
                         <!-- Left: Interactive Gallery -->
                         <div class="space-y-3">
                             <div id="product-zoom-container" class="relative overflow-hidden bg-[#FBF9F3] border border-[#E4DFD1] cursor-crosshair">
                                 <div class="aspect-square overflow-hidden flex items-center justify-center">
-                                    <img id="main-product-image" 
-                                         src="https://res.cloudinary.com/vccwvvwb/image/upload/jack-watches/products/patek-philippe-nautilus-5712-1r-001-brown-dial-18k-rose-gold-plating-super-clone-0.webp" 
-                                         alt="Patek Philippe Nautilus 5712/1R-001 Brown Dial 18K Rose Gold Plating Gained Weight 195g UMIF 40mm - 1:1 Super Clone Watch USA - QC Verified" 
-                                         class="w-full h-full object-cover transition-transform duration-200" 
-                                         style="transform: scale(1); transform-origin: 50% 50%;" 
+                                    <img id="main-product-image"
+                                         src="https://res.cloudinary.com/vccwvvwb/image/upload/jack-watches/products/patek-philippe-nautilus-5712-1r-001-brown-dial-18k-rose-gold-plating-super-clone-0.webp"
+                                         alt="Patek Philippe Nautilus 5712/1R-001 Brown Dial 18K Rose Gold Plating Gained Weight 195g UMIF 40mm - 1:1 Super Clone Watch USA - QC Verified"
+                                         class="w-full h-full object-cover transition-transform duration-200"
+                                         style="transform: scale(1); transform-origin: 50% 50%;"
                                          loading="eager"
                                          onerror="this.src='/wp-content/themes/jack-watches/assets/images/placeholder.webp';">
                                 </div>
@@ -161,33 +173,33 @@
                             <!-- Thumbnails row -->
                             <div class="grid grid-cols-4 sm:grid-cols-5 gap-2 sm:gap-3 overflow-x-auto pb-1">
                                 
-        <button type="button" 
-                onclick="document.getElementById('main-product-image').src='https://res.cloudinary.com/vccwvvwb/image/upload/jack-watches/products/patek-philippe-nautilus-5712-1r-001-brown-dial-18k-rose-gold-plating-super-clone-0.webp'; document.querySelectorAll('.prod-thumb-btn').forEach(b => { b.classList.remove('border-[#A88030]', 'shadow-[0_0_0_3px_rgba(168,128,48,0.25)]'); b.classList.add('border-[#E4DFD1]', 'opacity-80'); }); this.classList.remove('border-[#E4DFD1]', 'opacity-80'); this.classList.add('border-[#A88030]', 'shadow-[0_0_0_3px_rgba(168,128,48,0.25)]');"
+        <button type="button"
+                data-img="https://res.cloudinary.com/vccwvvwb/image/upload/jack-watches/products/patek-philippe-nautilus-5712-1r-001-brown-dial-18k-rose-gold-plating-super-clone-0.webp"
                 class="prod-thumb-btn border-[#A88030] shadow-[0_0_0_3px_rgba(168,128,48,0.25)] aspect-square overflow-hidden border-2 transition-all duration-200 hover:scale-[1.04] p-1 bg-white cursor-pointer flex items-center justify-center flex-shrink-0 rounded-xs">
             <img src="https://res.cloudinary.com/vccwvvwb/image/upload/jack-watches/products/patek-philippe-nautilus-5712-1r-001-brown-dial-18k-rose-gold-plating-super-clone-0.webp" alt="Patek Philippe Nautilus 5712/1R-001 Brown Dial 18K Rose Gold Plating Gained Weight 195g UMIF 40mm - Angle 1" class="w-full h-full object-cover" loading="lazy" onerror="this.src='/wp-content/themes/jack-watches/assets/images/placeholder.webp';">
         </button>
-        <button type="button" 
-                onclick="document.getElementById('main-product-image').src='https://res.cloudinary.com/vccwvvwb/image/upload/jack-watches/products/patek-philippe-nautilus-5712-1r-001-brown-dial-18k-rose-gold-plating-super-clone-1.webp'; document.querySelectorAll('.prod-thumb-btn').forEach(b => { b.classList.remove('border-[#A88030]', 'shadow-[0_0_0_3px_rgba(168,128,48,0.25)]'); b.classList.add('border-[#E4DFD1]', 'opacity-80'); }); this.classList.remove('border-[#E4DFD1]', 'opacity-80'); this.classList.add('border-[#A88030]', 'shadow-[0_0_0_3px_rgba(168,128,48,0.25)]');"
+        <button type="button"
+                data-img="https://res.cloudinary.com/vccwvvwb/image/upload/jack-watches/products/patek-philippe-nautilus-5712-1r-001-brown-dial-18k-rose-gold-plating-super-clone-1.webp"
                 class="prod-thumb-btn border-[#E4DFD1] hover:border-[#A88030]/60 opacity-80 hover:opacity-100 aspect-square overflow-hidden border-2 transition-all duration-200 hover:scale-[1.04] p-1 bg-white cursor-pointer flex items-center justify-center flex-shrink-0 rounded-xs">
             <img src="https://res.cloudinary.com/vccwvvwb/image/upload/jack-watches/products/patek-philippe-nautilus-5712-1r-001-brown-dial-18k-rose-gold-plating-super-clone-1.webp" alt="Patek Philippe Nautilus 5712/1R-001 Brown Dial 18K Rose Gold Plating Gained Weight 195g UMIF 40mm - Angle 2" class="w-full h-full object-cover" loading="lazy" onerror="this.src='/wp-content/themes/jack-watches/assets/images/placeholder.webp';">
         </button>
-        <button type="button" 
-                onclick="document.getElementById('main-product-image').src='https://res.cloudinary.com/vccwvvwb/image/upload/jack-watches/products/patek-philippe-nautilus-5712-1r-001-brown-dial-18k-rose-gold-plating-super-clone-2.webp'; document.querySelectorAll('.prod-thumb-btn').forEach(b => { b.classList.remove('border-[#A88030]', 'shadow-[0_0_0_3px_rgba(168,128,48,0.25)]'); b.classList.add('border-[#E4DFD1]', 'opacity-80'); }); this.classList.remove('border-[#E4DFD1]', 'opacity-80'); this.classList.add('border-[#A88030]', 'shadow-[0_0_0_3px_rgba(168,128,48,0.25)]');"
+        <button type="button"
+                data-img="https://res.cloudinary.com/vccwvvwb/image/upload/jack-watches/products/patek-philippe-nautilus-5712-1r-001-brown-dial-18k-rose-gold-plating-super-clone-2.webp"
                 class="prod-thumb-btn border-[#E4DFD1] hover:border-[#A88030]/60 opacity-80 hover:opacity-100 aspect-square overflow-hidden border-2 transition-all duration-200 hover:scale-[1.04] p-1 bg-white cursor-pointer flex items-center justify-center flex-shrink-0 rounded-xs">
             <img src="https://res.cloudinary.com/vccwvvwb/image/upload/jack-watches/products/patek-philippe-nautilus-5712-1r-001-brown-dial-18k-rose-gold-plating-super-clone-2.webp" alt="Patek Philippe Nautilus 5712/1R-001 Brown Dial 18K Rose Gold Plating Gained Weight 195g UMIF 40mm - Angle 3" class="w-full h-full object-cover" loading="lazy" onerror="this.src='/wp-content/themes/jack-watches/assets/images/placeholder.webp';">
         </button>
-        <button type="button" 
-                onclick="document.getElementById('main-product-image').src='https://res.cloudinary.com/vccwvvwb/image/upload/jack-watches/products/Patek-Philippe-Nautilus-5712-1R-001-Brown-Dial-18K-Rose-Gold-Plating-Super-Clone-Gained-Weight-195g-UMIF-4.jpg.webp'; document.querySelectorAll('.prod-thumb-btn').forEach(b => { b.classList.remove('border-[#A88030]', 'shadow-[0_0_0_3px_rgba(168,128,48,0.25)]'); b.classList.add('border-[#E4DFD1]', 'opacity-80'); }); this.classList.remove('border-[#E4DFD1]', 'opacity-80'); this.classList.add('border-[#A88030]', 'shadow-[0_0_0_3px_rgba(168,128,48,0.25)]');"
+        <button type="button"
+                data-img="https://res.cloudinary.com/vccwvvwb/image/upload/jack-watches/products/Patek-Philippe-Nautilus-5712-1R-001-Brown-Dial-18K-Rose-Gold-Plating-Super-Clone-Gained-Weight-195g-UMIF-4.jpg.webp"
                 class="prod-thumb-btn border-[#E4DFD1] hover:border-[#A88030]/60 opacity-80 hover:opacity-100 aspect-square overflow-hidden border-2 transition-all duration-200 hover:scale-[1.04] p-1 bg-white cursor-pointer flex items-center justify-center flex-shrink-0 rounded-xs">
             <img src="https://res.cloudinary.com/vccwvvwb/image/upload/jack-watches/products/Patek-Philippe-Nautilus-5712-1R-001-Brown-Dial-18K-Rose-Gold-Plating-Super-Clone-Gained-Weight-195g-UMIF-4.jpg.webp" alt="Patek Philippe Nautilus 5712/1R-001 Brown Dial 18K Rose Gold Plating Gained Weight 195g UMIF 40mm - Angle 4" class="w-full h-full object-cover" loading="lazy" onerror="this.src='/wp-content/themes/jack-watches/assets/images/placeholder.webp';">
         </button>
-        <button type="button" 
-                onclick="document.getElementById('main-product-image').src='https://res.cloudinary.com/vccwvvwb/image/upload/jack-watches/products/Patek-Philippe-Nautilus-5712-1R-001-Brown-Dial-18K-Rose-Gold-Plating-Super-Clone-Gained-Weight-195g-UMIF-5.jpg.webp'; document.querySelectorAll('.prod-thumb-btn').forEach(b => { b.classList.remove('border-[#A88030]', 'shadow-[0_0_0_3px_rgba(168,128,48,0.25)]'); b.classList.add('border-[#E4DFD1]', 'opacity-80'); }); this.classList.remove('border-[#E4DFD1]', 'opacity-80'); this.classList.add('border-[#A88030]', 'shadow-[0_0_0_3px_rgba(168,128,48,0.25)]');"
+        <button type="button"
+                data-img="https://res.cloudinary.com/vccwvvwb/image/upload/jack-watches/products/Patek-Philippe-Nautilus-5712-1R-001-Brown-Dial-18K-Rose-Gold-Plating-Super-Clone-Gained-Weight-195g-UMIF-5.jpg.webp"
                 class="prod-thumb-btn border-[#E4DFD1] hover:border-[#A88030]/60 opacity-80 hover:opacity-100 aspect-square overflow-hidden border-2 transition-all duration-200 hover:scale-[1.04] p-1 bg-white cursor-pointer flex items-center justify-center flex-shrink-0 rounded-xs">
             <img src="https://res.cloudinary.com/vccwvvwb/image/upload/jack-watches/products/Patek-Philippe-Nautilus-5712-1R-001-Brown-Dial-18K-Rose-Gold-Plating-Super-Clone-Gained-Weight-195g-UMIF-5.jpg.webp" alt="Patek Philippe Nautilus 5712/1R-001 Brown Dial 18K Rose Gold Plating Gained Weight 195g UMIF 40mm - Angle 5" class="w-full h-full object-cover" loading="lazy" onerror="this.src='/wp-content/themes/jack-watches/assets/images/placeholder.webp';">
         </button>
-        <button type="button" 
-                onclick="document.getElementById('main-product-image').src='https://res.cloudinary.com/vccwvvwb/image/upload/jack-watches/products/Patek-Philippe-Nautilus-5712-1R-001-Brown-Dial-18K-Rose-Gold-Plating-Super-Clone-Gained-Weight-195g-UMIF-6.jpg.webp'; document.querySelectorAll('.prod-thumb-btn').forEach(b => { b.classList.remove('border-[#A88030]', 'shadow-[0_0_0_3px_rgba(168,128,48,0.25)]'); b.classList.add('border-[#E4DFD1]', 'opacity-80'); }); this.classList.remove('border-[#E4DFD1]', 'opacity-80'); this.classList.add('border-[#A88030]', 'shadow-[0_0_0_3px_rgba(168,128,48,0.25)]');"
+        <button type="button"
+                data-img="https://res.cloudinary.com/vccwvvwb/image/upload/jack-watches/products/Patek-Philippe-Nautilus-5712-1R-001-Brown-Dial-18K-Rose-Gold-Plating-Super-Clone-Gained-Weight-195g-UMIF-6.jpg.webp"
                 class="prod-thumb-btn border-[#E4DFD1] hover:border-[#A88030]/60 opacity-80 hover:opacity-100 aspect-square overflow-hidden border-2 transition-all duration-200 hover:scale-[1.04] p-1 bg-white cursor-pointer flex items-center justify-center flex-shrink-0 rounded-xs">
             <img src="https://res.cloudinary.com/vccwvvwb/image/upload/jack-watches/products/Patek-Philippe-Nautilus-5712-1R-001-Brown-Dial-18K-Rose-Gold-Plating-Super-Clone-Gained-Weight-195g-UMIF-6.jpg.webp" alt="Patek Philippe Nautilus 5712/1R-001 Brown Dial 18K Rose Gold Plating Gained Weight 195g UMIF 40mm - Angle 6" class="w-full h-full object-cover" loading="lazy" onerror="this.src='/wp-content/themes/jack-watches/assets/images/placeholder.webp';">
         </button>
@@ -203,7 +215,7 @@
                                 Patek Philippe Nautilus 5712/1R-001 Brown Dial 18K Rose Gold Plating Gained Weight 195g UMIF 40mm
                             </h1>
                             <p class="font-sans text-[10px] text-[#8F8E80] leading-relaxed mb-4">
-                                Replica timepiece. Not affiliated with, authorized by, or endorsed by Patek Philippe or any luxury watch manufacturer. 
+                                Replica timepiece. Not affiliated with, authorized by, or endorsed by Patek Philippe or any luxury watch manufacturer.
                                 <a href="/terms/" class="underline hover:text-[#6B7268]">IP Notice</a>
                             </p>
 
@@ -234,7 +246,7 @@
                                 <p class="font-sans text-[2.6rem] lg:text-[3rem] font-semibold text-[#A88030] leading-none tracking-normal mb-5" style="font-variant-numeric: tabular-nums;">
                                     $4,950
                                 </p>
-                                
+
                                 <a href="https://wa.me/15716614938?text=Hi%20Max%20Watches%2C%20I%27m%20interested%20in%20the%20Patek%20Philippe%20Nautilus%205712/1R-001%20Brown%20Dial%2018K%20Rose%20Gold%20Plating%20Gained%20Weight%20195g%20UMIF%2040mm%20%28Price%3A%20%244%2C950%29.%20Please%20send%20me%20QC%20photos%20and%20confirm%20availability." target="_blank" rel="noopener noreferrer" class="btn-gold w-full justify-center text-[14px] tracking-[0.06em] py-4 px-6 rounded-lg text-white font-bold flex items-center gap-2.5 shadow-md hover:shadow-lg transition-all text-decoration-none">
                                     <svg viewBox="0 0 256 256" width="18" height="18" fill="currentColor"><path d="M152.58,145.23l23,11.48A24,24,0,0,1,152,176a72.08,72.08,0,0,1-72-72A24,24,0,0,1,99.29,80.46l11.48,23L101,118a8,8,0,0,0-.73,7.51,56.47,56.47,0,0,0,30.15,30.15A8,8,0,0,0,138,155ZM232,128A104,104,0,0,1,79.12,219.82L45.07,231.17a16,16,0,0,1-20.24-20.24l11.35-34.05A104,104,0,1,1,232,128Zm-40,24a8,8,0,0,0-4.42-7.16l-32-16a8,8,0,0,0-8,.5l-14.69,9.8a40.55,40.55,0,0,1-16-16l9.8-14.69a8,8,0,0,0,.5-8l-16-32A8,8,0,0,0,104,64a40,40,0,0,0-40,40,88.1,88.1,0,0,0,88,88A40,40,0,0,0,192,152Z"/></svg>
                                     Inquire Now — Get Pricing &amp; QC Photos
@@ -537,8 +549,6 @@
             <section class="border-t border-[#E4DFD1] bg-[#FBF9F3]">
                 <div class="container-site max-w-3xl mx-auto py-12 px-5">
                     <div class="divide-y divide-[#E4DFD1] border-t border-b border-[#E4DFD1]">
-                        
-                        <!-- Accordion 1 -->
                         <div class="accordion-item py-1">
                             <button type="button" onclick="toggleAccordion(this)" class="flex items-center justify-between w-full py-5 text-left group cursor-pointer bg-transparent border-0">
                                 <div class="flex items-center gap-3">
@@ -556,7 +566,6 @@
                             </div>
                         </div>
 
-                        <!-- Accordion 2 -->
                         <div class="accordion-item py-1">
                             <button type="button" onclick="toggleAccordion(this)" class="flex items-center justify-between w-full py-5 text-left group cursor-pointer bg-transparent border-0">
                                 <div class="flex items-center gap-3">
@@ -574,7 +583,6 @@
                             </div>
                         </div>
 
-                        <!-- Accordion 3 -->
                         <div class="accordion-item py-1">
                             <button type="button" onclick="toggleAccordion(this)" class="flex items-center justify-between w-full py-5 text-left group cursor-pointer bg-transparent border-0">
                                 <div class="flex items-center gap-3">
@@ -591,12 +599,11 @@
                                 </p>
                             </div>
                         </div>
-
                     </div>
                 </div>
             </section>
 
-            <!-- SECTION 4: What Clients Say (Dark Testimonials Section) -->
+            <!-- SECTION 4: What Clients Say (Dark Testimonials + Customer Photos Carousel) -->
             <section class="py-14 bg-[#14181A] relative overflow-hidden">
                 <div class="noise-overlay absolute inset-0 opacity-[0.03] pointer-events-none"></div>
                 <div class="container-site max-w-[1440px] px-5 lg:px-10 mx-auto relative z-10">
@@ -615,13 +622,10 @@
                         </div>
                     </div>
 
-                    <!-- 3 Review Cards matching Reference -->
                     <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
                         <div class="bg-white/5 border border-white/10 rounded-xl p-6 flex flex-col justify-between">
                             <div>
-                                <div class="flex gap-0.5 mb-4 text-amber-400">
-                                    <span>★★★★★</span>
-                                </div>
+                                <div class="flex gap-0.5 mb-4 text-amber-400"><span>★★★★★</span></div>
                                 <p class="font-sans text-sm text-zinc-300 leading-relaxed mb-6">
                                     &quot;The integrated bracelet finish is incredible. Can&#39;t believe the quality at this price. Will order again.&quot;
                                 </p>
@@ -631,17 +635,13 @@
                                     <p class="font-sans text-xs font-bold text-white">Chris M.</p>
                                     <p class="font-sans text-[11px] text-zinc-500">Houston, USA · AP Royal Oak</p>
                                 </div>
-                                <span class="inline-flex items-center gap-1 font-sans text-[10px] font-semibold text-[#0F5132] bg-[#0F5132]/10 border border-[#0F5132]/30 px-2 py-0.5 rounded-full">
-                                    Verified
-                                </span>
+                                <span class="inline-flex items-center gap-1 font-sans text-[10px] font-semibold text-[#0F5132] bg-[#0F5132]/10 border border-[#0F5132]/30 px-2 py-0.5 rounded-full">Verified</span>
                             </div>
                         </div>
 
                         <div class="bg-white/5 border border-white/10 rounded-xl p-6 flex flex-col justify-between">
                             <div>
-                                <div class="flex gap-0.5 mb-4 text-amber-400">
-                                    <span>★★★★★</span>
-                                </div>
+                                <div class="flex gap-0.5 mb-4 text-amber-400"><span>★★★★★</span></div>
                                 <p class="font-sans text-sm text-zinc-300 leading-relaxed mb-6">
                                     &quot;Hesitated at first but the QC process sealed it. Real photos, fast replies, perfect delivery. 10/10.&quot;
                                 </p>
@@ -651,17 +651,13 @@
                                     <p class="font-sans text-xs font-bold text-white">Ryan S.</p>
                                     <p class="font-sans text-[11px] text-zinc-500">Chicago, USA · Omega Seamaster</p>
                                 </div>
-                                <span class="inline-flex items-center gap-1 font-sans text-[10px] font-semibold text-[#0F5132] bg-[#0F5132]/10 border border-[#0F5132]/30 px-2 py-0.5 rounded-full">
-                                    Verified
-                                </span>
+                                <span class="inline-flex items-center gap-1 font-sans text-[10px] font-semibold text-[#0F5132] bg-[#0F5132]/10 border border-[#0F5132]/30 px-2 py-0.5 rounded-full">Verified</span>
                             </div>
                         </div>
 
                         <div class="bg-white/5 border border-white/10 rounded-xl p-6 flex flex-col justify-between">
                             <div>
-                                <div class="flex gap-0.5 mb-4 text-amber-400">
-                                    <span>★★★★★</span>
-                                </div>
+                                <div class="flex gap-0.5 mb-4 text-amber-400"><span>★★★★★</span></div>
                                 <p class="font-sans text-sm text-zinc-300 leading-relaxed mb-6">
                                     &quot;Absolutely flawless. The finishing is beyond anything I expected — you cannot tell it apart at 50 paces.&quot;
                                 </p>
@@ -671,14 +667,11 @@
                                     <p class="font-sans text-xs font-bold text-white">Marcus T.</p>
                                     <p class="font-sans text-[11px] text-zinc-500">New York, USA · Rolex Submariner</p>
                                 </div>
-                                <span class="inline-flex items-center gap-1 font-sans text-[10px] font-semibold text-[#0F5132] bg-[#0F5132]/10 border border-[#0F5132]/30 px-2 py-0.5 rounded-full">
-                                    Verified
-                                </span>
+                                <span class="inline-flex items-center gap-1 font-sans text-[10px] font-semibold text-[#0F5132] bg-[#0F5132]/10 border border-[#0F5132]/30 px-2 py-0.5 rounded-full">Verified</span>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Customer Photos Carousel with Real WhatsApp Proof -->
                     <div class="mt-10 pt-8 border-t border-white/10">
                         <div class="flex items-center justify-between mb-5">
                             <p class="font-sans text-[11px] font-bold text-zinc-500 tracking-[0.22em] uppercase">Customer Photos</p>
@@ -774,7 +767,6 @@
                 <div class="container-site max-w-3xl mx-auto px-5">
                     <h2 class="font-display text-3xl text-[#14181A] mb-8 font-bold">Frequently asked questions</h2>
                     <div class="divide-y divide-[#E4DFD1] border-t border-b border-[#E4DFD1]">
-                        
                         <div>
                             <button type="button" onclick="toggleFaq(this)" class="w-full flex items-start justify-between gap-4 py-5 text-left group cursor-pointer bg-transparent border-0" aria-expanded="false">
                                 <span class="font-sans text-[15px] font-semibold text-[#14181A] leading-snug group-hover:text-[#0F5132] transition-colors duration-150 flex-1">
@@ -838,12 +830,11 @@
                                 </p>
                             </div>
                         </div>
-
                     </div>
                 </div>
             </section>
 
-            <!-- SECTION: From the Journal (3 Research Cards) -->
+            <!-- SECTION: From the Journal (3 Research Cards linking to valid /blog/ routes) -->
             <section class="py-14 bg-[#F5F2EA] border-t border-[#D6CFBB]">
                 <div class="container-site max-w-[1440px] px-5 lg:px-10 mx-auto">
                     <div class="flex items-end justify-between mb-8 gap-4">
@@ -854,7 +845,7 @@
                         <a href="/journal/" class="font-sans text-[12px] font-semibold text-[#6B7268] hover:text-[#14181A] transition-colors tracking-wide text-decoration-none">All articles →</a>
                     </div>
                     <div class="grid grid-cols-1 md:grid-cols-3 gap-px bg-[#D6CFBB]">
-                        <a href="/journal/patek-philippe-nautilus-super-clone-guide/" class="group bg-white block hover:bg-[#FBF9F3] transition-colors duration-200 text-decoration-none">
+                        <a href="/blog/patek-philippe-nautilus-super-clone-guide/" class="group bg-white block hover:bg-[#FBF9F3] transition-colors duration-200 text-decoration-none">
                             <div class="aspect-[16/9] overflow-hidden bg-[#EDE8DA]">
                                 <img src="https://res.cloudinary.com/vccwvvwb/image/upload/jack-watches/products/patek-philippe-nautilus-5712-1r-001-brown-dial-18k-rose-gold-plating-super-clone-0.webp" alt="Patek Philippe Nautilus 5711 and 5726 Super Clone: What You Need to Know" class="w-full h-full object-cover opacity-90 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500" loading="lazy">
                             </div>
@@ -864,7 +855,7 @@
                                 <p class="font-sans text-[11px] text-[#6B7268] line-clamp-2 leading-relaxed">The Patek Philippe Nautilus is one of the most valuable and sought-after watches in the world. The 5711/1A in stainless steel was discontinued in 2021 and now trades on the secondary market for four to six times retail...</p>
                             </div>
                         </a>
-                        <a href="/journal/best-super-clone-watch-websites-usa-2026/" class="group bg-white block hover:bg-[#FBF9F3] transition-colors duration-200 text-decoration-none">
+                        <a href="/blog/best-super-clone-watch-websites-usa-2026/" class="group bg-white block hover:bg-[#FBF9F3] transition-colors duration-200 text-decoration-none">
                             <div class="aspect-[16/9] overflow-hidden bg-[#EDE8DA]">
                                 <img src="https://images.unsplash.com/photo-1547996160-81dfa63595aa?w=1200&amp;q=80" alt="Best Super Clone Watch Websites USA 2026: Where to Buy" class="w-full h-full object-cover opacity-90 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500" loading="lazy">
                             </div>
@@ -874,7 +865,7 @@
                                 <p class="font-sans text-[11px] text-[#6B7268] line-clamp-2 leading-relaxed">Finding a trustworthy super clone watch website in 2026 is harder than it looks. The market is littered with scammers, low-tier fake dealers pretending to sell super clones, and offshore operations...</p>
                             </div>
                         </a>
-                        <a href="/journal/best-site-to-buy-super-clone-rolex-2026/" class="group bg-white block hover:bg-[#FBF9F3] transition-colors duration-200 text-decoration-none">
+                        <a href="/blog/best-site-to-buy-super-clone-rolex-2026/" class="group bg-white block hover:bg-[#FBF9F3] transition-colors duration-200 text-decoration-none">
                             <div class="aspect-[16/9] overflow-hidden bg-[#EDE8DA]">
                                 <img src="https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=1200&amp;q=80" alt="Best Site to Buy Super Clone Rolex USA: Complete Buyer Guide (2026)" class="w-full h-full object-cover opacity-90 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500" loading="lazy">
                             </div>
@@ -1032,7 +1023,7 @@
         </div>
     </main>
 
-        <!-- Footer -->
+    <!-- Footer -->
     <footer class="bg-[#F0F0EE] border-t border-[#D6D6D4] mt-auto text-[#0F0E0C]">
         <div class="container-site max-w-[1440px] px-5 lg:px-10 mx-auto py-12 sm:py-14 lg:py-16 grid grid-cols-2 md:grid-cols-2 lg:grid-cols-5 gap-8 sm:gap-10">
             <div class="col-span-2 lg:col-span-2">
@@ -1095,12 +1086,12 @@
             <div class="col-span-2 md:col-span-1">
                 <p class="font-sans text-[10px] font-bold text-[#909090] tracking-[0.22em] uppercase mb-5">Stay Updated</p>
                 <p class="font-sans text-sm text-[#525250] leading-relaxed mb-4">
-                    New arrivals, QC updates, and exclusive drops - straight to your inbox.
+                    New arrivals, QC updates, and exclusive drops - straight via concierge.
                 </p>
-                <form class="flex flex-col gap-2" onsubmit="event.preventDefault(); alert('Thank you for subscribing to Max Timepieces.');">
-                    <input type="email" placeholder="your@email.com" class="w-full bg-white border border-[#D6D6D4] text-[#0F0E0C] font-sans text-sm px-4 py-2.5 placeholder:text-[#ADADAB] focus:outline-none focus:border-[#A88030] transition-colors duration-200">
+                <form id="vip-drop-form" class="flex flex-col gap-2" onsubmit="return submitVipDrop(this);">
+                    <input name="email" type="email" required placeholder="your@email.com" class="w-full bg-white border border-[#D6D6D4] text-[#0F0E0C] font-sans text-sm px-4 py-2.5 placeholder:text-[#ADADAB] focus:outline-none focus:border-[#A88030] transition-colors duration-200">
                     <button type="submit" class="w-full bg-[#0F0E0C] text-white font-sans font-bold text-sm px-4 py-2.5 hover:bg-[#A88030] transition-colors duration-200 active:scale-[0.97] cursor-pointer">
-                        Subscribe
+                        Join VIP Drops
                     </button>
                 </form>
                 <p class="font-sans text-[11px] text-[#909090] mt-3">
@@ -1158,27 +1149,13 @@
                     <a href="/privacy/" class="font-sans text-xs text-[#909090] hover:text-[#0F0E0C] transition-colors duration-200 text-decoration-none">Privacy Policy</a>
                     <a href="/terms/" class="font-sans text-xs text-[#909090] hover:text-[#0F0E0C] transition-colors duration-200 text-decoration-none">Terms</a>
                     <a href="/shipping/" class="font-sans text-xs text-[#909090] hover:text-[#0F0E0C] transition-colors duration-200 text-decoration-none">Shipping</a>
-                    <a href="/contact/" class="font-sans text-xs text-[#909090] hover:text-[#0F0E0C] transition-colors duration-200 text-decoration-none">IP Notice</a>
+                    <a href="/ip-notice/" class="font-sans text-xs text-[#909090] hover:text-[#0F0E0C] transition-colors duration-200 text-decoration-none">IP Notice</a>
                 </div>
             </div>
         </div>
     </footer>
 
-    <!-- Reference-Style Floating WhatsApp FAB -->
-    <style>
-    @keyframes wa-glow-pulse {
-      0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7); }
-      50% { transform: scale(1.02); box-shadow: 0 0 0 14px rgba(37, 211, 102, 0); }
-      100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
-    }
-    .wa-fab-btn {
-      animation: wa-glow-pulse 2.2s infinite;
-    }
-    .wa-fab-btn:hover {
-      transform: translateY(-2px) scale(1.03) !important;
-      background-color: #20b558 !important;
-    }
-    </style>
+    <!-- Floating WhatsApp FAB -->
     <div id="whatsapp-fab-container" style="position: fixed !important; bottom: 24px !important; right: 24px !important; z-index: 2147483647 !important; pointer-events: auto !important; display: flex !important; flex-direction: column !important; align-items: flex-end !important; gap: 12px !important;">
       <a id="whatsapp-fab-link" href="https://wa.me/15716614938?text=Hi%20Max%20Watches%2C%20I%27m%20interested%20in%20the%20Patek%20Philippe%20Nautilus%205712/1R-001%20Brown%20Dial%2018K%20Rose%20Gold%20Plating%20Gained%20Weight%20195g%20UMIF%2040mm%20%28Price%3A%20%244%2C950%29.%20Please%20send%20me%20QC%20photos%20and%20confirm%20availability." target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp with Max Timepieces" class="wa-fab-btn" style="display: flex !important; align-items: center !important; gap: 10px !important; background-color: #25D366 !important; color: #ffffff !important; padding: 14px 22px !important; border-radius: 9999px !important; box-shadow: 0 8px 30px rgba(37,211,102,0.55) !important; text-decoration: none !important; cursor: pointer !important; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif !important; font-weight: 700 !important; font-size: 13.5px !important; letter-spacing: 0.05em !important;">
         <svg style="width: 22px; height: 22px; fill: #ffffff; flex-shrink: 0;" viewBox="0 0 256 256">
@@ -1188,9 +1165,22 @@
       </a>
     </div>
 
-    <!-- Interactive Client Scripts for Zoom, Accordions & FAQs -->
     <script>
-    // Interactive Zoom
+    // Gallery thumbnail switching without inline JS interpolation
+    document.querySelectorAll('.prod-thumb-btn').forEach(function(btn) {
+        btn.addEventListener('click', function() {
+            var src = this.getAttribute('data-img');
+            var mainImg = document.getElementById('main-product-image');
+            if (mainImg && src) mainImg.src = src;
+            document.querySelectorAll('.prod-thumb-btn').forEach(function(b) {
+                b.classList.remove('border-[#A88030]', 'shadow-[0_0_0_3px_rgba(168,128,48,0.25)]');
+                b.classList.add('border-[#E4DFD1]', 'opacity-80');
+            });
+            this.classList.remove('border-[#E4DFD1]', 'opacity-80');
+            this.classList.add('border-[#A88030]', 'shadow-[0_0_0_3px_rgba(168,128,48,0.25)]');
+        });
+    });
+
     (function() {
         var zoomBox = document.getElementById('product-zoom-container');
         var zoomImg = document.getElementById('main-product-image');
@@ -1209,7 +1199,6 @@
         }
     })();
 
-    // Accordions Toggle
     function toggleAccordion(btn) {
         var content = btn.nextElementSibling;
         var arrow = btn.querySelector('.accordion-arrow');
@@ -1222,8 +1211,6 @@
         }
     }
 
-    // FAQ Toggle
-        // Customer Photos Slider
     var photoSlideIdx = 0;
     var totalPhotoCards = 12;
     function getVisibleCards() {
@@ -1238,37 +1225,24 @@
         var maxIdx = Math.max(0, totalPhotoCards - vis);
         if (photoSlideIdx > maxIdx) photoSlideIdx = maxIdx;
         if (photoSlideIdx < 0) photoSlideIdx = 0;
-        var stepPct = 100 / vis;
-        track.style.transform = 'translateX(-' + (photoSlideIdx * stepPct) + '%)';
-        
+        track.style.transform = 'translateX(-' + (photoSlideIdx * (100 / vis)) + '%)';
+
         var dots = document.querySelectorAll('#photo-dots button');
         var activeDot = Math.min(dots.length - 1, Math.floor(photoSlideIdx / 2));
         dots.forEach(function(d, i) {
-            if (i === activeDot) {
-                d.className = 'bg-[#0F5132] w-5 h-1 rounded-full transition-all duration-300';
-            } else {
-                d.className = 'bg-white/20 w-1.5 h-1 rounded-full transition-all duration-300';
-            }
+            d.className = i === activeDot
+                ? 'bg-[#0F5132] w-5 h-1 rounded-full transition-all duration-300'
+                : 'bg-white/20 w-1.5 h-1 rounded-full transition-all duration-300';
         });
     }
     function nextPhotoSlide() {
-        var vis = getVisibleCards();
-        var maxIdx = Math.max(0, totalPhotoCards - vis);
-        if (photoSlideIdx < maxIdx) {
-            photoSlideIdx++;
-        } else {
-            photoSlideIdx = 0;
-        }
+        var maxIdx = Math.max(0, totalPhotoCards - getVisibleCards());
+        photoSlideIdx = photoSlideIdx < maxIdx ? photoSlideIdx + 1 : 0;
         updatePhotoSlider();
     }
     function prevPhotoSlide() {
-        var vis = getVisibleCards();
-        var maxIdx = Math.max(0, totalPhotoCards - vis);
-        if (photoSlideIdx > 0) {
-            photoSlideIdx--;
-        } else {
-            photoSlideIdx = maxIdx;
-        }
+        var maxIdx = Math.max(0, totalPhotoCards - getVisibleCards());
+        photoSlideIdx = photoSlideIdx > 0 ? photoSlideIdx - 1 : maxIdx;
         updatePhotoSlider();
     }
     function setPhotoSlide(idx) {
@@ -1276,7 +1250,7 @@
         updatePhotoSlider();
     }
     window.addEventListener('resize', updatePhotoSlider);
-    
+
     function toggleFaq(btn) {
         var answer = btn.nextElementSibling;
         var icon = btn.querySelector('.faq-icon');
@@ -1289,6 +1263,15 @@
             answer.classList.remove('hidden');
             if (icon) icon.style.transform = 'rotate(45deg)';
         }
+    }
+
+    function submitVipDrop(form) {
+        var email = (form.email && form.email.value || '').trim();
+        if (!email) return false;
+        var msg = 'Hi Max Timepieces, please add ' + email + ' to VIP new arrivals and QC updates.';
+        window.open('https://wa.me/15716614938?text=' + encodeURIComponent(msg), '_blank', 'noopener,noreferrer');
+        form.reset();
+        return false;
     }
     </script>
 
